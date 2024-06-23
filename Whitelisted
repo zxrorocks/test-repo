@@ -5,5 +5,5 @@ return {
 2272447559, -- @whoszxro
 145099751, -- @zxrorocks
 4750222940, -- @xeseth
-game.Players:FindFirstChild(getgenv().Accounts.OWNER).UserId
+game.Players:WaitForChild(getgenv().Accounts.OWNER).UserId
 }
