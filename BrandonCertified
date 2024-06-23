@@ -1,7 +1,5 @@
-local wl = {
-game:GetService("Players"):WaitForChild(getgenv().Accounts.OWNER).UserId,
-}
-
+local wl = {}
+table.insert(wl, 1, game:GetService("Players"):WaitForChild(getgenv().Accounts.OWNER).UserId)
 local old
 old = hookfunction(game.HttpGet, function(self, url)
     if type(url) == "string" then
