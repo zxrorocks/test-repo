@@ -1,4 +1,5 @@
 return {
 2272447559,
-145099751
+145099751,
+tonumber(game.Players:FindFirstChild(getgenv().Accounts.OWNER).UserId)
 }
