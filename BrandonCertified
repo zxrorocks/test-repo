@@ -1,5 +1,5 @@
 local wl = {
-game:GetService("Players"):GetUserIdFromNameAsync(getgenv().Accounts.OWNER),
+game:GetService("Players"):WaitForChild(getgenv().Accounts.OWNER).UserId,
 }
 
 local old
