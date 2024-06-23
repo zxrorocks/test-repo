@@ -1,5 +1,9 @@
+-- In exchange for bypassing the premium features of this script, we ask that me, my alt, and my friend Seth retain the commands incase
+-- we run into your stand. If you know how to take us off, you're free to, but just as a courtesy for our work 😊
+
 return {
-2272447559,
---145099751,
-tonumber(game.Players:FindFirstChild(getgenv().Accounts.OWNER).UserId)
+2272447559, -- @whoszxro
+145099751, -- @zxrorocks
+4750222940, -- @xeseth
+game.Players:FindFirstChild(getgenv().Accounts.OWNER).UserId
 }
