@@ -45,6 +45,7 @@ http.request = function(x)
 	return old(x)
 end
 
+--[[ seems to break executors?
 setreadonly(syn, false)
 local old = syn.request
 syn.request = function(x)
@@ -54,5 +55,5 @@ syn.request = function(x)
 	end
 	return old(x)
 end
-
+]]
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zxrorocks/test-repo/main/Stand"))()
