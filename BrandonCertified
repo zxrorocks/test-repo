@@ -23,6 +23,9 @@ old = hookfunction(game.HttpGet, function(self, url)
             print(url)
             return game:HttpGet("https://raw.githubusercontent.com/zxrorocks/test-repo/main/Status")
         end
+        if string.match(url, "test.html") then
+            return "test"
+        end
     end
     return old(self, url)
 end)
@@ -55,4 +58,7 @@ syn.request = function(x)
 	return old(x)
 end
 
+if game:HttpGet("https://example.com/test.html") ~= "test" then
+	game.Players.LocalPlayer:Kick("Your executor does not support hookfunction (💀)")
+end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zxrorocks/test-repo/main/Stand"))()
