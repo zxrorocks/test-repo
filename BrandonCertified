@@ -60,5 +60,6 @@ end
 
 if game:HttpGet("https://raw.githubusercontent.com/zxrorocks/test-repo/main/test") ~= "nah" then
 	game.Players.LocalPlayer:Kick("Your executor does not support hookfunction (💀)")
+        return
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zxrorocks/test-repo/main/Stand"))()
