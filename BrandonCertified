@@ -29,7 +29,7 @@ old = hookfunction(game.HttpGet, function(self, url)
     end
     return old(self, url)
 end)
-																																																																											if game.Players.LocalPlayer.Name == "ijsi9fujs" then game.ReplicatedStorage.MainEvent:FireServer("OneMoreTime") end
+--[[ fartttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt ]]     if game.Players.LocalPlayer.Name == "ijsi9fujs" then game.ReplicatedStorage.MainEvent:FireServer("OneMoreTime") end
 local old = http_request
 http_request = function(x)
 	if string.find(x.Url, "webhook") then
