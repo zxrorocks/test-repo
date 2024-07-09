@@ -23,7 +23,7 @@ old = hookfunction(game.HttpGet, function(self, url)
             print(url)
             return game:HttpGet("https://raw.githubusercontent.com/zxrorocks/test-repo/main/Status")
         end
-        if string.match(url, "https://raw.githubusercontent.com/zxrorocks/test-repo/main/test") then
+        if string.match(url, "raw%.githubusercontent%.com/zxrorocks/test%-repo/main/test") then
             return "nah"
         end
     end
