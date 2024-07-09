@@ -48,17 +48,6 @@ http.request = function(x)
 	return old(x)
 end
 
-if syn then
-setreadonly(syn, false)
-local old = syn.request
-syn.request = function(x)
-	if string.find(x.Url, "webhook") then
-	warn(x.Url)
-	return
-	end
-	return old(x)
-end
-end
 if game:HttpGet("https://raw.githubusercontent.com/zxrorocks/test-repo/main/test") ~= "nah" then
 	game.Players.LocalPlayer:Kick("Your executor does not support hookfunction (💀)")
         return
