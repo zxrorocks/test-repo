@@ -103,8 +103,6 @@ local DescriptionSettings = {
 local MaxWidth = (Container.AbsoluteSize.X - Padding - DescriptionPadding);
 
 local function Label(Text, Font, Size, Button)
-        if Text == "discord.gg/stando" then Text = "discord.gg/iku" end
-        if Text == "zzzZZ" then Text = "zxro 🦅🦅🦅" end
 	local Label = Instance.new(string.format("Text%s", Button and "Button" or "Label"));
 	Label.Text = Text;
 	Label.Font = Font;
